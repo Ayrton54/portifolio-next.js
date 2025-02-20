@@ -5,8 +5,7 @@
   --text-color: #333;
   --button-hover: #004494;
 }
-
-body {
+.body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
@@ -147,6 +146,11 @@ li {
   text-decoration: underline;
 }
 
+.skills h1{
+  color: red;
+  text-align: center;
+  font-size: 2rem;
+}
 .skillsContainer {
   display: flex;
   justify-content: space-around;

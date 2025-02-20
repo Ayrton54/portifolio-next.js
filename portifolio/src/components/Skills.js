@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css';
 export default function Skills() {
   return (
     <section id="skills" className={styles.skills}>
-      <h2>Skills</h2>
+      <h1>Skills</h1>
       <div className={styles.skillsWrapper}>
         <div className={styles.skillColumn}>
           <h3>Hard Skills</h3>

@@ -1,8 +1,9 @@
 import styles from '../styles/Home.module.css';
 
+
 export default function Presentation() {
   return (
-    <section id="presentation" className={styles.presentation}>
+    <section id="presentation" className={`${styles.presentation} ${styles.body}`}>
       <div className={styles.centeredContent}>
         <img src="/perfil.png" alt="Minha Foto" className={styles.photo} />
         <h1>Ayrton Lopes</h1>
