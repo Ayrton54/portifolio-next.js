@@ -2,7 +2,7 @@ import styles from '../styles/Home.module.css';
 
 export default function Skills() {
   return (
-    <section id="skills" className={styles.skills}>
+    <section id="skills" className={`${styles.skills} ${styles.body}`}>
       <h1>Skills</h1>
       <div className={styles.skillsWrapper}>
         <div className={styles.skillColumn}>

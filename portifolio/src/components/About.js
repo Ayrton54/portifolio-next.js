@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css';
 
 export default function About() {
   return (
-    <section id="about" className={styles.about}>
+    <section id="about" className={styles.about} >
       <h2>Sobre Mim</h2>
       <p>Atualmente estou cursando Sistemas de Informação e me especializando em desenvolvimento de software.</p>
       <div className={styles.projects}>

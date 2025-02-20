@@ -72,7 +72,7 @@ export default function Contact() {
       {status && <p>{status}</p>}
       <div className={styles.socials}>
         <a href="https://wa.me/77991801038" target="_blank" rel="noopener noreferrer">
-          <img src="/Whatsapp.png" alt="WhatsApp" className={styles.icon} />
+          <img src="/WhatsApp.png" alt="WhatsApp" className={styles.icon} />
         </a>
         <a href="https://github.com/Ayrton54" target="_blank" rel="noopener noreferrer">
           <img src="/github.png" alt="GitHub" className={styles.icon} />
