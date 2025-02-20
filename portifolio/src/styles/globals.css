@@ -1,0 +1,249 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #0056b3;
+  --background-color: #f0f8ff;
+  --text-color: #333;
+  --button-hover: #004494;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: var(--background-color);
+  color: var(--text-color);
+  text-align: center;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0044cc;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  gap: 40px;
+}
+
+.navbar ul li {
+  display: inline-block; 
+}
+
+.navbar ul li a {
+  background: none;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+  display: inline-block; /* Mantém o tamanho adequado */
+}
+
+.navbar ul li a:hover {
+  background: var(--button-hover);
+  border-radius: 5px;
+}
+
+li {
+  background: var(--secondary-color);
+  color: white;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.presentation, .about, .skillsContainer, .contact {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2rem;
+  ;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.projects-container {
+  margin-top: 30px;
+}
+
+.projects-container h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: var(--secondary-color);
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  justify-content: center;
+}
+
+.project-card {
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h4 {
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.project-link {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.skillsContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+  gap: 20px;
+}
+
+.skillsColumn {
+  text-align: center;
+  width: 45%;
+}
+
+.skillsColumn h2 {
+  color: #0044cc;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.skillsColumn ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skillsColumn li {
+  font-size: 16px;
+  color: black;
+  padding: 5px 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; 
+  width: 100%;
+}
+
+form input, form textarea {
+  width: 90%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+button {
+  background: var(--primary-color);
+  width: 80%;
+  max-width: 200px;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: var(--button-hover);
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
